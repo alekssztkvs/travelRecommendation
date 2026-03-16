@@ -28,6 +28,11 @@ body {
     flex: 1;
 }
 
+.navLeft img {
+    width: 30px;
+    height:30px;
+    padding-left: 15px;
+}
 .navLinks {
     display: flex;
     justify-content: center;
@@ -61,6 +66,7 @@ body {
 
 .searchNav input {
     padding: 8px 12px;
+    flex: 1;
     border: 1px solid #ccc;
     border-radius: 15px;
     outline: none;
@@ -83,6 +89,7 @@ body {
     font-weight: bold;
 }
 .socialBar {
+    padding-left: 15px;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -109,4 +116,68 @@ body {
     background-color: darkgreen;
     color:#000000;
     font-weight: bold;
+}
+
+
+/*ABOUT US PAGE */
+
+.aboutUsBox {
+    max-width: 1200px;
+}
+
+.aboutUsSocialBar {
+    padding-top: 150px;
+}
+
+.aboutUsHeader {
+    color:#000000;
+    text-align: left;
+    font-size: 60px;
+    margin-bottom: 0px;
+    padding-left: 90px;
+}
+.aboutUsHero {
+    margin-top: 10px;
+}
+
+.teamBox {
+    display: flex;
+    flex-wrap: wrap;    
+    gap: 15px;
+}
+
+.teamMember {
+    background-color: #2c3e50;
+    padding:15px 20px;
+    border-radius: 15px;
+    color:white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    max-width: 250px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+}
+.teamMember h2 {
+    font-size: 30px;
+    text-align: center;
+}
+.teamMember p {
+    font-size: 20px;
+    text-align: center;
+}
+.teamMember img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+}
+
+.teamMember label {
+    text-align: center;
+    border-radius: 15px;
+    background-color: #4654a5;
+    padding: 12px 22px;
 }
