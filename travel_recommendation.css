@@ -5,6 +5,23 @@ body {
     background-repeat: no-repeat;
     min-height: 100vh;
     background-image: url(./background.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+}
+p {
+    color:white;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+h1 {
+    color:white;
+    text-shadow: 4px 4px 10px rgba(0,0,0,0.7);
+}
+label {
+    color:white;
+    text-shadow: 4px 4px 10px rgba(0,0,0,0.7);
+}
+button {
+    color:white;
+    text-shadow: 4px 4px 10px rgba(0,0,0,0.7);
 }
 .navBar {
     display: flex;
@@ -85,7 +102,6 @@ body {
 }
 .hero p {
     font-size: 30px;
-    color:#000000;
     font-weight: bold;
 }
 .socialBar {
@@ -98,6 +114,7 @@ body {
 .socialBar img {
     width: 60px;
     height: 60px;
+    border-radius: 15px;
 }
 
 .heroBox {
@@ -130,7 +147,6 @@ body {
 }
 
 .aboutUsHeader {
-    color:#000000;
     text-align: left;
     font-size: 60px;
     margin-bottom: 0px;
@@ -180,4 +196,47 @@ body {
     border-radius: 15px;
     background-color: #4654a5;
     padding: 12px 22px;
+}
+
+
+/* FOR CONTACT USE PAGE */
+
+.contactUsHeader h1 {
+    font-size: 100px;
+}
+.contactUsHeader p {
+    font-size: 40px;
+}
+
+.submitBox{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    max-width: 500px;
+    font-size: 40px;
+    border-radius: 20px;
+    background-color: #4654a5;
+    margin-left:200px;
+    padding: 12px 22px;
+}
+
+.submitBox input,
+.submitBox textarea {
+    font-size:20px;
+    padding: 15px 20px;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    background-color: rgba(255,255,255,0.1); /*transparent bg*/
+    
+}
+#submitBtn {
+    font-size: 20px;
+    border-radius: 15px;
+    cursor:pointer;
+    padding: 15px 20px;
+    background-color: darkgreen;
+    color:white;
+}
+.contactUsSocialBar {
+    padding-top: 60px;
 }
