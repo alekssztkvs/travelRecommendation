@@ -4,7 +4,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
-    background-image: url(./background.jpg);
+    background-image: url(./images/background.jpg);
     font-family: Arial, Helvetica, sans-serif;
 }
 p {
@@ -129,9 +129,9 @@ button {
     padding: 12px 22px;
     border:none;
     border-radius: 15px;
+    font-size: 20px;
     cursor: pointer;
     background-color: darkgreen;
-    color:#000000;
     font-weight: bold;
 }
 
@@ -239,4 +239,38 @@ button {
 }
 .contactUsSocialBar {
     padding-top: 60px;
+}
+
+.resultCard {
+    display : none; /*hidden*/
+    margin-left: 10px;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.result-card {
+    text-align: center;
+    margin:auto;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    max-width: 400px; /* for same size */
+    min-height: 500px;
+    background-color: #4654a5;
+    border-radius: 15px;
+    padding: 12px 22px;
+    margin-top: 10px;
+
+}
+.result-card h1 {
+    font-size: 38px;
+}
+.result-card p {
+    font-size: 23px;
+}
+.result-card img {
+    height: 300px;
+    width: 300px;
 }
