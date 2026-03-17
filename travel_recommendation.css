@@ -176,7 +176,7 @@ button {
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+
     height: 300px;
 }
 .teamMember h2 {
@@ -196,6 +196,7 @@ button {
 }
 
 .teamMember label {
+    margin-top: auto;
     text-align: center;
     border-radius: 15px;
     background-color: rgba(23, 124, 206, 0.5);
