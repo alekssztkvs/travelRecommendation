@@ -13,11 +13,14 @@ fetch('travel_recommendation_api.json')
 const searchBtn = document.getElementById("srchBtn");
 const resultCard = document.getElementById("resultCard");
 const heroBox = document.getElementById("heroBox");
+const pageContent = document.querySelectorAll(".page-content");
 const searchInput = document.getElementById("search");
 
 function makeSearch() {
-    heroBox.style.display = "none";
     resultCard.style.display = "flex";
+    pageContent.forEach(el => {
+        el.classList.add("hidden");
+    });
     const keyword = document.getElementById("search").value.toLowerCase();
     
     resultCard.innerHTML = "";
@@ -37,7 +40,9 @@ function makeSearch() {
     }
     else {
         resultCard.style.display = "none";
-        heroBox.style.display = "block";
+        pageContent.forEach(el => {
+            el.classList.remove("hidden");
+        });
     }
     //clear user input in search
     searchInput.value = "";
@@ -69,8 +74,11 @@ function renderCards(array) {
 }
 
 function restoreOriginalContent() {
-    heroBox.style.display = "block";
+    //heroBox.style.display = "block";
     resultCard.style.display = "none";
+    pageContent.forEach(el => {
+        el.classList.remove("hidden");
+    });
 }
 
 const clearButton = document.getElementById("clrBtn");
